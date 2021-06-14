@@ -1,0 +1,46 @@
+.breadcrumbs {
+  margin-bottom: 16px;
+  
+  .nav {
+    &__list {
+      justify-content: flex-start;
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+      &___item {
+        text-transform: none;
+        font-size: 0.8125rem;
+        font-weight: 600;
+        color: #585858;
+
+        &:not(:last-child)::after {
+          content: "/";
+          margin: 0 0.7rem;
+        }
+       
+        &:hover {
+          border-bottom: none;
+        }
+
+        &:not(:last-child):hover {
+          text-decoration: underline;
+        }
+
+        @include for-phone-only {
+          display: none;
+        }
+
+        &--active {
+          color: #261e1e;
+          @include for-phone-only {
+            display: block;
+            text-align: center;
+            font-size: 1.4375rem;
+            font-weight: 400;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}

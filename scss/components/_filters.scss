@@ -1,0 +1,35 @@
+.filters {
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+
+  @include for-phone-only {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+
+    &___item {
+      display: flex;
+      align-items: center;
+      padding: 12px 14px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(38, 30, 30, 0.04);
+      }
+
+      &--label {
+        text-transform: uppercase;
+        font-size: 0.6875rem;
+        font-weight: 400;
+        color: #261e1e;
+      }
+
+      &--img {
+        height: 20px;
+        margin-left: 8px;
+      }
+    }
+  }
+}
