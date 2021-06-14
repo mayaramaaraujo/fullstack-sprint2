@@ -1,0 +1,27 @@
+.header {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  width: 100%;
+
+  &__container {
+    margin: auto;
+    max-width:container 1200px;
+    width: 95%;
+
+    &--mobile {
+      display: none;
+      margin-bottom: 25px;
+
+      @include for-phone-only {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &--desktop {
+      @include for-phone-only {
+        display: none;
+      }
+    }
+  }
+}
