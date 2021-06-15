@@ -1,0 +1,40 @@
+.links {
+  background-color: #f6f6f6;
+  margin-top: 40px;
+
+  display: flex;
+
+  &__contacts {
+    width: 30%;
+    display: flex;
+  }
+
+  &__col {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  &__icon {
+    text-align: center;
+  }
+
+  &__img {
+    display: block;
+    margin: auto;
+    width: 25px;
+  }
+
+  &__text {
+    padding: 8px;
+    font-size: 0.8125rem;
+    white-space: pre-line;
+  }
+
+  &__separator {
+    width: 1px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+}

@@ -1,0 +1,28 @@
+.social {
+  flex-grow: 1;
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__icons {
+    display: flex;
+
+    &___icon {
+      width: 50px;
+    }
+
+    &___img {
+      display: block;
+      margin: auto;
+    }
+
+    &___text {
+      padding-top: 4px;
+      font-size: 0.6875rem;
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+}

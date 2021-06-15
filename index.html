@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Riachuelo</title>
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
   <link rel="stylesheet" href="css/reset.css" />
@@ -236,235 +235,290 @@
       </div>
     </section>
   </main>
-  
-  <div class="footer">
-    <div class="container contact">
-      <p class="info">Receba ofertas e novidades por e-mail</p>
+
+  <footer class="footer">
+    <section class="footer__container contact" >
+      <p class="contact__info">Receba ofertas e novidades por e-mail</p>
       <form action="/">
-        <input class="input" type="email" placeholder="Digite aqui seu e-mail" />
-        <button class="btn" type="submit">
-          <span class="txt">Cadastrar</span>
-        </button>
+        <input class="contact__input" type="email" placeholder="Digite aqui seu e-mail" aria-label="Digite o aqui seu e-mail">
+        <button class="contact__btn" type="submit">Cadastrar</button>
       </form>
+
       <div class="apps">
-        <p class="msg">Baixe nosso App</p>
-        <a class="app" href="#">
-          <img class="img" src="assets/google-play.webp" />
+        <p class="apps__msg">Baixe nosso App</p>
+        <a href="#" class="apps__app">
+          <img src="assets/google-play.webp" alt="Logo do link para baixar o app da Riachuelo no Google Play" class="apps__app___img">
         </a>
-        <a class="app" href="#">
-          <img class="img" src="assets/app-store.webp" />
+
+        <a href="#" class="apps__app">
+          <img src="assets/app-store.webp" alt="Logo do link para baixar o app da Riachuelo no App Store" class="apps__app___img">
         </a>
       </div>
-    </div>
-    <div class="links">
-      <div class="container contacts">
-        <div class="col">
-          <a href="#" class="contact-icon">
-            <img class="img" src="assets/ico-attendance.svg" />
-            <p class="text">Atendimento</p>
+    </section>
+
+    <section class="links">
+
+      <div class="links__contacts">
+        <div class="links__col">
+          <a href="#" class="links__icon">
+            <img class="links__img" src="assets/ico-attendance.svg" alt="ícone Atendimento">
+            <p class="links__text">Atendimento</p>
           </a>
-          <a href="#" class="contact-icon">
-            <img class="img" src="assets/ico-faq.svg" />
-            <p class="text">Perguntas Frequentes</p>
+          <a href="#" class="links__icon">
+            <img class="links__img" src="assets/ico-faq.svg" alt="">
+            <p class="links__text">Perguntas Frequentes</p>
           </a>
         </div>
-        <div class="col">
-          <a href="#" class="contact-icon">
-            <img class="img" src="assets/ico-invoice-and-statement.svg" />
-            <p class="text">Fatura e Extrato</p>
+        <div class="links__col">
+          <a href="#" class="links__icon">
+            <img class="links__img" src="assets/ico-invoice-and-statement.svg" />
+            <p class="links__text">Fatura e Extrato</p>
           </a>
-          <a href="#" class="contact-icon">
-            <img class="img" src="assets/ico-work-with-us.svg" />
-            <p class="text">Trabalhe Conosco</p>
+          <a href="#" class="links__icon">
+            <img class="links__img" src="assets/ico-work-with-us.svg" />
+            <p class="links__text">Trabalhe Conosco</p>
           </a>
         </div>
       </div>
-      <hr class="separator">
+
+      <hr class="links__separator">
+
       <ul class="companies">
-        <li class="company-links">
-          <h1 class="title">Cartão Riachuelo</h1>
+        <li class="companies__links">
+          <h1 class="companies__title">Cartão Riachuelo</h1>
           <ul>
-            <li class="item">
-              <a class="text" href="#">
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">
                 Midway Financeira
               </a>
             </li>
-            <li class="item">
-              <a class="text" href="#">
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">
                 Saiba como adquirir
               </a>
             </li>
-            <li class="item">
-              <a class="text" href="#">
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">
                 Veja sua fatura e extrato
               </a>
             </li>
-            <li class="item">
-              <a class="text" href="#">
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">
                 Buscando quitar suas dívidas?
               </a>
             </li>
           </ul>
         </li>
-        <li class="company-links">
-          <h1 class="title">Sobre a Riachuelo</h1>
+        <li class="companies__links">
+          <h1 class="companies__title">Sobre a Riachuelo</h1>
           <ul>
-            <li class="item" class="item">
-              <a class="text" href="#">A Empresa</a>
+            <li class="companies__item" class="item">
+              <a class="companies__item___text" href="#">A Empresa</a>
             </li>
-            <li class="item">
-              <a class="text" href="#">Portal de Fornecedores</a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Portal de Fornecedores</a>
             </li>
-            <li class="item">
-              <a class="text" href="#">
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">
                 Relação com Investidores
               </a>
             </li>
-            <li class="item">
-              <a class="text" href="#">
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">
                 Assessoria de Imprensa
               </a>
             </li>
-            <li class="item">
-              <a class="text" href="#">Trabalhe Conosco</a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Trabalhe Conosco</a>
             </li>
-            <li class="item">
-              <a class="text" href="#">
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">
                 Programa Jovem Aprendiz
               </a>
             </li>
-            <li class="item">
-              <a class="text" href="#">
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">
                 Cadastro de Startups
               </a>
             </li>
-            <li class="item">
-              <a class="text" href="#"> Mapa do Site </a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#"> Mapa do Site </a>
             </li>
-            <li class="item">
-              <a class="text" href="#"> Guide Shop </a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#"> Guide Shop </a>
             </li>
-            <li class="item">
-              <a class="text" href="#">
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">
                 Venda na Riachuelo Marketplace
               </a>
             </li>
           </ul>
         </li>
-        <li class="company-links">
-          <h1 class="title">Moda que Transforma</h1>
+        <li class="companies__links">
+          <h1 class="companies__title">Moda que Transforma</h1>
           <ul>
-            <li class="item">
-              <a class="text" href="#">Na prática</a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Na prática</a>
             </li>
-            <li class="item">
-              <a class="text" href="#">Entre Costuras</a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Entre Costuras</a>
             </li>
-            <li class="item">
-              <a class="text" href="#">
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">
                 Jeans Mais Transparente</a>
             </li>
-            <li class="item">
-              <a class="text" href="#">Ações Covid-19</a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Ações Covid-19</a>
             </li>
-            <li class="item">
-              <a class="text" href="#">Free Free</a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Free Free</a>
             </li>
           </ul>
         </li>
-        <li class="company-links">
-          <h1 class="title">Ajuda</h1>
+        <li class="companies__links">
+          <h1 class="companies__title">Ajuda</h1>
           <ul>
-            <li class="item">
-              <a class="text" href="#">Atendimento</a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Atendimento</a>
             </li>
-            <li class="item">
-              <a class="text" href="#">Perguntas Frequentes</a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Perguntas Frequentes</a>
             </li>
-            <li class="item">
-              <a class="text" href="#">Trocas e Devoluções</a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Trocas e Devoluções</a>
             </li>
-            <li class="item">
-              <a class="text" href="#">Portal da Privacidade</a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Portal da Privacidade</a>
             </li>
-            <li class="item">
-              <a class="text" href="#">Política de Privacidade</a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Política de Privacidade</a>
             </li>
-            <li class="item">
-              <a class="text" href="#">Termos e Condições de Uso</a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Termos e Condições de Uso</a>
             </li>
-            <li class="item">
-              <a class="text" href="#">Regras e Resultados de Sorteios</a>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Regras e Resultados de Sorteios</a>
             </li>
           </ul>
         </li>
-      </ul>
-    </div>
-    <div class="container payment">
-      <div class="alternatives">
-        <h1 class="title">Formas de Pagamento</h1>
-        <img class="img" src="assets/ico-cartao-rchlo1.webp" />
-        <img class="img" src="assets/ico-cartao-rchlo2.webp" />
-        <img class="img" src="assets/ico-cartao-rchlo3.webp" />
-        <img class="img" src="assets/ico-cartao-visa.png" />
-        <img class="img" src="assets/ico-cartao-master.webp" />
-        <img class="img" src="assets/ico-cartao-amex.webp" />
-        <img class="img" src="assets/ico-cartao-diners.png" />
-        <img class="img" src="assets/ico-cartao-elo.png" />
-        <img class="img" src="assets/ico-boleto.webp" />
-        <img class="img" src="assets/ico-paypal.png" />
+        <li class="companies__links">
+          <h1 class="companies__title">Moda que Transforma</h1>
+          <ul>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Na prática</a>
+            </li>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Entre Costuras</a>
+            </li>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">
+                Jeans Mais Transparente</a>
+            </li>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Ações Covid-19</a>
+            </li>
+            <li class="item">
+              <a class="companies__item___text" href="#">Free Free</a>
+            </li>
+          </ul>
+        </li>
+        <li class="companies__links">
+          <h1 class="companies__title">Ajuda</h1>
+          <ul>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Atendimento</a>
+            </li>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Perguntas Frequentes</a>
+            </li>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Trocas e Devoluções</a>
+            </li>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Portal da Privacidade</a>
+            </li>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Política de Privacidade</a>
+            </li>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Termos e Condições de Uso</a>
+            </li>
+            <li class="companies__item">
+              <a class="companies__item___text" href="#">Regras e Resultados de Sorteios</a>
+            </li>
+          </ul>
+        </li>
+      </ul>      
+    </section>
+
+    <section class="footer__container payment">
+      <div class="payment__alternatives">
+        <h1 class="payment__title">Formas de pagamento</h1>
+        <img class="payment__alternatives___img" src="assets/ico-cartao-rchlo1.webp" />
+        <img class="payment__alternatives___img" src="assets/ico-cartao-rchlo2.webp" />
+        <img class="payment__alternatives___img" src="assets/ico-cartao-rchlo3.webp" />
+        <img class="payment__alternatives___img" src="assets/ico-cartao-visa.png" />
+        <img class="payment__alternatives___img" src="assets/ico-cartao-master.webp" />
+        <img class="payment__alternatives___img" src="assets/ico-cartao-amex.webp" />
+        <img class="payment__alternatives___img" src="assets/ico-cartao-diners.png" />
+        <img class="payment__alternatives___img" src="assets/ico-cartao-elo.png" />
+        <img class="payment__alternatives___img" src="assets/ico-boleto.webp" />
+        <img class="payment__alternatives___img" src="assets/ico-paypal.png" />
       </div>
+
       <div class="social">
-        <h1 class="title">Siga a Riachuelo</h1>
-        <div class="icons">
-          <div class="icon">
+        <h1 class="social__title">Siga a Riachuelo</h1>
+        <div class="social__icons">
+          <div class="social__icons___icon">
             <a href="#">
-              <img class="img" src="assets/ico-facebook.svg" />
+              <img class="social__icons___img" src="assets/ico-facebook.svg"  alt="Logo do link para o Facebook"/>
             </a>
           </div>
 
-          <div class="icon">
+          <div class="social__icons___icon">
             <a href="#">
-              <img class="img" src="assets/ico-instagram.svg" />
+              <img class="social__icons___img" src="assets/ico-instagram.svg" alt="Logo do link para o Instagram"/>
             </a>
-            <p class="text">RCHLO</p>
+            <p class="social__icons___text">RCHLO</p>
           </div>
 
-          <div class="icon">
+          <div class="social__icons___icon">
             <a href="#">
-              <img class="img" src="assets/ico-instagram.svg" />
+              <img class="social__icons___img" src="assets/ico-instagram.svg" />
             </a>
-            <p class="text">CASA RCHLO</p>
+            <p class="social__icons___text">CASA RCHLO</p>
           </div>
 
-          <div class="icon">
+          <div class="social__icons___icon">
             <a href="#">
-              <img class="img" src="assets/ico-pinterest.svg" />
+              <img class="social__icons___img" src="assets/ico-pinterest.svg" />
             </a>
           </div>
-          <div class="icon">
+          <div class="social__icons___icon">
             <a href="#">
-              <img class="img" src="assets/ico-twitter.svg" />
+              <img class="social__icons___img" src="assets/ico-twitter.svg" />
             </a>
           </div>
-          <div class="icon">
+          <div class="social__icons___icon">
             <a href="#">
-              <img class="img" src="assets/ico-youtube.svg" />
+              <img class="social__icons___img" src="assets/ico-youtube.svg" />
             </a>
           </div>
-          <div class="icon">
+          <div class="social__icons___icon">
             <a href="#">
-              <img class="img" src="assets/ico-linkedin.svg" />
+              <img class="social__icons___img" src="assets/ico-linkedin.svg" />
             </a>
           </div>
         </div>
       </div>
+
       <div class="accessibility">
-        <h1 class="title">Acessibilidade</h1>
-        <img class="img" src="assets/ico-a11y.webp" />
+        <h1 class="accessibility__title">Acessibilidade</h1>
+        <img class="accessibility__img" src="assets/ico-a11y.webp" />
       </div>
-    </div>
-    <div class="bottom">
+    </section>
+
+    <section class="bottom">
       <div class="container">
         <div class="copyright">
           <p class="text">
@@ -497,8 +551,8 @@
           <img class="img" src="assets/ra1000.webp" />
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </footer>
 </body>
 
 </html>

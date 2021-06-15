@@ -1,0 +1,20 @@
+.apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__msg {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 20px;
+  }
+
+  &__app {
+    margin-left: 10px;
+
+    &___img {
+      width: 110px;
+    }
+  }
+}

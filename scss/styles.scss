@@ -5,7 +5,10 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"),
-  "components/search", "components/header", "components/menu", "components/logo", "components/nav", 'components/breadcrumbs', 'components/main', 'components/filters', 'components/products';
+  "components/search", "components/header", "components/menu", "components/logo", "components/nav",
+  "components/breadcrumbs", "components/main", "components/filters", "components/products", "components/footer",
+  "components/apps", "components/companies", "components/contacts", "components/links", "components/accessibility",
+  "components/social", "components/payment";
 html {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -24,8 +27,6 @@ html {
   display: none;
 }
 
-// COMEÇA AQUI
-
 div.header {
   .floating {
     @include for-phone-only {
@@ -36,251 +37,26 @@ div.header {
   }
 }
 
-.footer {
-  border-top: 2px solid lightgray;
-
-  padding-top: 40px;
-  width: 100%;
+.bottom {
+  background-color: #f6f6f6;
+  padding: 20px 0;
 
   .container {
-    margin: 0 auto;
-    width: 90%;
+    display: flex;
   }
 
-  // inicio contact
-  .contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .copyright {
+    width: 83.333333%;
 
-    .info {
-      height: 50px;
-      line-height: 50px;
-      text-transform: uppercase;
-      font-size: 0.8125rem;
+    .text {
+      font-size: 0.5625rem;
+      font-weight: 400;
+      color: #261e1e;
     }
+  }
 
-    .input {
-      height: 24px;
-      line-height: 24px;
-      border: 0px;
-      border-bottom: 1px solid rgba(38, 30, 30, 0.42);
-      outline: none;
-      width: 300px;
-      font-size: 0.9375rem;
-      font-weight: 600;
-      color: #000;
-
-      &:hover {
-        border-bottom: 2px solid #261e1e;
-      }
-
-      &:focus-within {
-        border-bottom: 2px solid #261e1e;
-      }
-
-      &::placeholder {
-        font-style: italic;
-        opacity: 42%;
-        font-weight: 600;
-      }
-    }
-
-    .btn {
-      margin-left: 20px;
-      color: rgba(0, 0, 0, 0.26);
-      box-shadow: none;
-      background-color: rgba(0, 0, 0, 0.12);
-      border-radius: 4px;
-      border: none;
-      padding: 10px 20px 10px 20px;
-
-      .txt {
-        font-size: 0.8125rem;
-        text-transform: uppercase;
-      }
-    }
-
-    .apps {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .msg {
-        font-size: 0.9375rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-right: 20px;
-      }
-
-      .app {
-        margin-left: 10px;
-
-        .img {
-          width: 110px;
-        }
-      }
-    }
-  } // fim contact
-
-  // inicio links
-  .links {
-    background-color: #f6f6f6;
-    margin-top: 40px;
-
-    display: flex;
-
-    .contacts {
-      width: 30%;
-      display: flex;
-
-      .col {
-        flex-grow: 1;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-      }
-
-      .contact-icon {
-        text-align: center;
-        .img {
-          display: block;
-          margin: auto;
-          width: 25px;
-        }
-        .text {
-          padding: 8px;
-          font-size: 0.8125rem;
-          white-space: pre-line;
-        }
-      }
-    }
-
-    .separator {
-      width: 1px;
-      border: none;
-      background-color: rgba(0, 0, 0, 0.12);
-    }
-
-    .companies {
-      display: flex;
-      width: 60%;
-      padding: 50px;
-
-      .company-links {
-        flex-grow: 1;
-        margin-left: 8px;
-        margin-right: 8px;
-
-        .item {
-          padding-top: 8px;
-
-          .title {
-            text-transform: uppercase;
-            font-size: 0.875rem;
-          }
-
-          .text {
-            line-height: 25px;
-            font-size: 0.6875rem;
-            font-weight: 400;
-            color: black;
-
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-    }
-  } // fim links
-
-  // inicio payment
-  .payment {
-    margin-top: 25px;
-    margin-bottom: 25px;
-
-    display: flex;
-
-    .alternatives {
-      width: 50%;
-
-      .title {
-        text-transform: uppercase;
-        margin-bottom: 10px;
-      }
-
-      .img {
-        margin: 2px;
-        width: auto;
-      }
-    }
-
-    .social {
-      flex-grow: 1;
-
-      .title {
-        text-transform: uppercase;
-        margin-bottom: 10px;
-      }
-
-      .icons {
-        display: flex;
-
-        .icon {
-          width: 50px;
-
-          .img {
-            display: block;
-            margin: auto;
-          }
-
-          .text {
-            padding-top: 4px;
-            font-size: 0.6875rem;
-            font-weight: 300;
-            text-align: center;
-          }
-        }
-      }
-    }
-
-    .accessibility {
-      flex-grow: 1;
-
-      .title {
-        text-transform: uppercase;
-        margin-bottom: 10px;
-      }
-
-      .img {
-        width: 30px;
-      }
-    }
-  } // fim payment
-
-  // inicio bottom
-  .bottom {
-    background-color: #f6f6f6;
-    padding: 20px 0;
-
-    .container {
-      display: flex;
-    }
-
-    .copyright {
-      width: 83.333333%;
-
-      .text {
-        font-size: 0.5625rem;
-        font-weight: 400;
-        color: #261e1e;
-      }
-    }
-
-    .stamp {
-      margin: 0 auto;
-      width: 47px;
-    }
-  } // fim bottom
-} // fim footer
+  .stamp {
+    margin: 0 auto;
+    width: 47px;
+  }
+}

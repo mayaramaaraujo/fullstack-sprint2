@@ -1,0 +1,12 @@
+.accessibility {
+  flex-grow: 1;
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__img {
+    width: 30px;
+  }
+}
